@@ -43,3 +43,9 @@ jobs:
 
       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run: docker push appmanagm/hello-vue:lastest
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
